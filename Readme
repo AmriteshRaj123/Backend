@@ -1,0 +1,32 @@
+# Book and Movie API
+
+This project provides an API for retrieving information about books and movies. It allows users to search for books and movies based on categories and names.
+
+## Installation
+
+1. Clone this repository.
+2. Install dependencies using `npm install`.
+
+## Usage
+
+To start the server, run `npm start`. The server will be available at `http://localhost:8000`.
+
+## API Endpoints
+
+### Books
+
+- **GET /books/:category**: Retrieves a list of books based on the specified category.
+  - Query Parameter:
+    - `name`: (optional) Search for books with names containing this string.
+  - Example: `/books/fantasy?name=harry` returns books in the fantasy category with names containing "harry".
+
+### Movies
+
+- **GET /movies/:category**: Retrieves a list of movies based on the specified category.
+  - Query Parameter:
+    - `name`: (optional) Search for movies with names containing this string.
+  - Example: `/movies/science%20fiction?name=inception` returns science fiction movies with names containing "inception".
+
+## Examples
+
+- To get a list of fantasy books:
